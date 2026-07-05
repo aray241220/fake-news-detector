@@ -1,0 +1,28 @@
+Fake news detector
+
+description:
+we will use kaggle for dataset https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+short project implementation guidelines:
+i.  The above dataset contains two files true.csv and false.csv
+ii. The data premise title,text,subject,date.so we will create a model which will be trained on these two datasets
+iii.We will ckeanup the stopwords from the text. we will also use stemming
+iv. We will create a model fake_news_model.pkl
+v.  Using this model we will classify any news whether this is fake or not.
+vi. We will use train test split on above two csv files to train our model best.
+vii.We may extend this one a streamlit app where we will enter any news text and the model should give the answer whether it is fake or not using confidance score
+
+
+Follow the below structure
+
+fake-news-detector/
+│
+├── data/
+│   └── True.csv, False.csv
+│
+├── model/
+│   └── fake_news_model.pkl
+│
+├── train.py
+├── app.py
+├── requirements.txt
+└── README.md
